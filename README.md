@@ -60,3 +60,70 @@ Encounters --------> Departments
    | encounter_id
    v
 Diagnoses
+SQL Skills Demonstrated
+- SELECT statements
+- WHERE filtering
+- JOIN and LEFT JOIN
+- GROUP BY
+- HAVING
+- CASE expressions
+- Aggregate functions
+- Date calculations
+- Subqueries
+- Common Table Expressions (CTEs)
+- Window functions
+- Data validation queries
+- Relational database design
+- Primary and foreign keys
+Tools
+- MySQL
+- MySQL Workbench
+- GitHub
+Dataset
+The project uses a synthetic dataset created specifically for SQL practice and portfolio demonstration.
+The initial database contains:
+- 10 synthetic patients
+- 20 hospital encounters
+- 6 hospital departments
+- 20 diagnosis records
+No real patient information or PHI is included.
+Analysis
+The analysis is divided into several areas:
+Patient Volume
+Examines total encounters, unique patients, encounter types, monthly utilization, and patient volume by department.
+Length of Stay
+Calculates length of stay using admission and discharge timestamps and compares average length of stay across encounter types and departments.
+Diagnosis Analysis
+Examines diagnosis frequency and the distribution of diagnoses across hospital departments.
+Emergency Department Utilization
+Examines ED encounters, unique ED patients, common ED diagnoses, monthly utilization, and repeat ED utilization.
+Readmission Analysis
+Uses CTEs and window functions to identify inpatient encounters followed by another inpatient admission within 30 days.
+The 30-day readmission analysis is a simplified educational measure and is not intended to reproduce an official CMS hospital readmission measure.
+Data Validation
+Checks the synthetic database for missing values, duplicate records, invalid dates, and unmatched records between related tables.
+## Key Findings
+
+Analysis of the synthetic hospital dataset produced the following findings:
+
+- The database contained **20 hospital encounters representing 10 unique patients**.
+- **Inpatient encounters accounted for 50%** of all encounters, followed by **Emergency encounters at 35%** and **Outpatient encounters at 15%**.
+- The **Emergency Department had the highest encounter volume**, with 7 encounters. Cardiology and Internal Medicine followed with 4 encounters each.
+- The overall **average length of stay was 43.30 hours** across all encounter types.
+- **Neurology had the longest average length of stay at 101.50 hours**, followed by Orthopedics at 78.50 hours and Cardiology at 77.50 hours.
+- Monthly encounter volume was highest in **February and March, with 6 encounters each**, compared with 5 in January and 3 in April.
+- Emergency encounters represented **35% of total hospital encounters**.
+- Diagnosis frequency was evenly distributed in the synthetic dataset, with each represented diagnosis occurring twice.
+- Using the project's simplified 30-day readmission definition, **3 of 5 eligible inpatient encounters were followed by another inpatient admission within 30 days**, resulting in a 60% rate within the synthetic sample.
+
+> **Note:** This project uses a small synthetic dataset created for SQL practice. The utilization and readmission results are intended to demonstrate analytical methods and should not be interpreted as real-world hospital performance measures.
+
+Future Improvements
+Future versions of this project could include:
+- Claims and insurance data
+- Provider information
+- Laboratory results
+- Medication data
+- Appointment and no-show analysis
+- Larger synthetic patient populations
+- Tableau or Power BI dashboard development
