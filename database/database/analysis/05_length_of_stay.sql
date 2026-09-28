@@ -73,3 +73,37 @@ WHERE TIMESTAMPDIFF(HOUR, admission_date, discharge_date) >
     FROM encounters
 )
 ORDER BY los_hours DESC;
+-- Average inpatient length of stay
+
+SELECT
+    ROUND(
+        AVG(
+            TIMESTAMPDIFF(
+                HOUR,
+                admission_date,
+                discharge_date
+            )
+        ),
+        2
+    ) AS avg_inpatient_los_hours
+FROM encounters
+WHERE encounter_type = 'Inpatient';
+
+
+-- Average encounter duration by encounter type
+
+SELECT
+    encounter_type,
+    ROUND(
+        AVG(
+            TIMESTAMPDIFF(
+                HOUR,
+                admission_date,
+                discharge_date
+            )
+        ),
+        2
+    ) AS avg_los_hours
+FROM encounters
+GROUP BY encounter_type
+ORDER BY avg_los_hours DESC;
