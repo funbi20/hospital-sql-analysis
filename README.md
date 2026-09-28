@@ -49,18 +49,8 @@ Encounters are connected to Departments through `department_id`.
 
 Diagnoses are connected to Encounters through `encounter_id`.
 
-```text
-Patients
-   |
-   | patient_id
-   v
-Encounters --------> Departments
-   |                 department_id
-   |
-   | encounter_id
-   v
-Diagnoses
-SQL Skills Demonstrated
+## SQL Skills Demonstrated
+
 - SELECT statements
 - WHERE filtering
 - JOIN and LEFT JOIN
@@ -75,33 +65,26 @@ SQL Skills Demonstrated
 - Data validation queries
 - Relational database design
 - Primary and foreign keys
-Tools
+
+## Tools
+
 - MySQL
 - MySQL Workbench
 - GitHub
-Dataset
+
+## Dataset
+
 The project uses a synthetic dataset created specifically for SQL practice and portfolio demonstration.
-The initial database contains:
+
+The database contains:
+
 - 10 synthetic patients
 - 20 hospital encounters
 - 6 hospital departments
 - 20 diagnosis records
+
 No real patient information or PHI is included.
-Analysis
-The analysis is divided into several areas:
-Patient Volume
-Examines total encounters, unique patients, encounter types, monthly utilization, and patient volume by department.
-Length of Stay
-Calculates length of stay using admission and discharge timestamps and compares average length of stay across encounter types and departments.
-Diagnosis Analysis
-Examines diagnosis frequency and the distribution of diagnoses across hospital departments.
-Emergency Department Utilization
-Examines ED encounters, unique ED patients, common ED diagnoses, monthly utilization, and repeat ED utilization.
-Readmission Analysis
-Uses CTEs and window functions to identify inpatient encounters followed by another inpatient admission within 30 days.
-The 30-day readmission analysis is a simplified educational measure and is not intended to reproduce an official CMS hospital readmission measure.
-Data Validation
-Checks the synthetic database for missing values, duplicate records, invalid dates, and unmatched records between related tables.
+
 ## Key Findings
 
 Analysis of the synthetic hospital dataset produced the following findings:
@@ -131,12 +114,27 @@ Key limitations include:
 - The 30-day readmission calculation is a simplified educational measure and does not reproduce CMS readmission methodology.
 - The dataset does not currently include claims, medications, laboratory results, providers, or procedures.
 
-Future Improvements
+## Future Improvements
+
 Future versions of this project could include:
+
 - Claims and insurance data
 - Provider information
 - Laboratory results
 - Medication data
 - Appointment and no-show analysis
 - Larger synthetic patient populations
-- Tableau or Power BI dashboard development
+- Tableau dashboard development
+
+```text
+Patients
+   |
+   | patient_id
+   v
+Encounters --------> Departments
+   |                 department_id
+   |
+   | encounter_id
+   v
+Diagnoses
+
