@@ -118,6 +118,19 @@ Analysis of the synthetic hospital dataset produced the following findings:
 
 > **Note:** This project uses a small synthetic dataset created for SQL practice. The utilization and readmission results are intended to demonstrate analytical methods and should not be interpreted as real-world hospital performance measures.
 
+## Limitations
+
+This project uses a small synthetic dataset and is intended to demonstrate SQL and healthcare data analysis techniques rather than evaluate actual hospital performance.
+
+Key limitations include:
+
+- The dataset contains only 10 patients and 20 encounters.
+- Diagnoses were intentionally distributed across the synthetic dataset and do not represent real disease prevalence.
+- The analysis does not adjust for patient demographics, severity, comorbidities, or other clinical risk factors.
+- Length of stay includes inpatient, outpatient, and emergency encounters unless otherwise specified.
+- The 30-day readmission calculation is a simplified educational measure and does not reproduce CMS readmission methodology.
+- The dataset does not currently include claims, medications, laboratory results, providers, or procedures.
+
 Future Improvements
 Future versions of this project could include:
 - Claims and insurance data
