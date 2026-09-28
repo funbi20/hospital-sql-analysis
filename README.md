@@ -1,3 +1,4 @@
+<img width="1536" height="1024" alt="Hospital DB ERD" src="https://github.com/user-attachments/assets/7500682d-6b37-4d99-8c07-c478595cf6a1" />
 # hospital-sql-analysis
 SQL analysis of a synthetic hospital database examining patient volume, length of stay, diagnoses, emergency department utilization, and 30-day readmissions.
 # Hospital Patient Utilization & Readmission Analysis
