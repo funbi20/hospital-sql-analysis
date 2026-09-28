@@ -92,8 +92,8 @@ Analysis of the synthetic hospital dataset produced the following findings:
 - The database contained **20 hospital encounters representing 10 unique patients**.
 - **Inpatient encounters accounted for 50%** of all encounters, followed by **Emergency encounters at 35%** and **Outpatient encounters at 15%**.
 - The **Emergency Department had the highest encounter volume**, with 7 encounters. Cardiology and Internal Medicine followed with 4 encounters each.
-- The overall **average length of stay was 43.30 hours** across all encounter types.
-- **Neurology had the longest average length of stay at 101.50 hours**, followed by Orthopedics at 78.50 hours and Cardiology at 77.50 hours.
+-The overall average encounter duration was 43.30 hours across inpatient, emergency, and outpatient encounters.
+-Inpatient encounters had an average length of stay of 82.20 hours, compared with 5.00 hours for emergency encounters and 3.00 hours for outpatient encounters.- **Neurology had the longest average length of stay at 101.50 hours**, followed by Orthopedics at 78.50 hours and Cardiology at 77.50 hours.
 - Monthly encounter volume was highest in **February and March, with 6 encounters each**, compared with 5 in January and 3 in April.
 - Emergency encounters represented **35% of total hospital encounters**.
 - Diagnosis frequency was evenly distributed in the synthetic dataset, with each represented diagnosis occurring twice.
